@@ -6,49 +6,49 @@
 
 @layer base {
   :root {
-    --background: 48 100% 97%;
-    --foreground: 0 0% 7%;
+    --background: 0 0% 96%;
+    --foreground: 0 0% 5%;
 
-    --card: 48 80% 95%;
-    --card-foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
 
-    --popover: 48 100% 97%;
-    --popover-foreground: 0 0% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
 
-    --primary: 48 100% 50%;
+    --primary: 48 100% 45%;
     --primary-foreground: 0 0% 0%;
 
-    --secondary: 43 96% 56%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 43 96% 38%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 45 30% 90%;
+    --muted: 0 0% 90%;
     --muted-foreground: 0 0% 30%;
 
-    --accent: 48 80% 85%;
-    --accent-foreground: 0 0% 7%;
+    --accent: 0 0% 92%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 45 40% 80%;
-    --input: 45 40% 80%;
-    --ring: 48 100% 50%;
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 48 100% 45%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 48 80% 95%;
-    --sidebar-foreground: 0 0% 7%;
-    --sidebar-primary: 48 100% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 5%;
+    --sidebar-primary: 48 100% 45%;
     --sidebar-primary-foreground: 0 0% 0%;
-    --sidebar-accent: 48 80% 85%;
-    --sidebar-accent-foreground: 0 0% 7%;
-    --sidebar-border: 45 40% 80%;
-    --sidebar-ring: 48 100% 50%;
+    --sidebar-accent: 0 0% 92%;
+    --sidebar-accent-foreground: 0 0% 5%;
+    --sidebar-border: 0 0% 80%;
+    --sidebar-ring: 48 100% 45%;
 
     /* Custom tokens */
-    --gold: 43 96% 40%;
-    --yellow-soft: 48 80% 92%;
-    --focus-ring: 48 100% 50%;
+    --gold: 43 96% 35%;
+    --yellow-soft: 0 0% 94%;
+    --focus-ring: 48 100% 45%;
     --focus-ring-width: 3px;
     --font-body: 'Atkinson Hyperlegible', sans-serif;
   }
