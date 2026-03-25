@@ -18,7 +18,7 @@ const Index = () => {
         {/* Hero */}
         <section
           aria-label="Introdução ao portal"
-          className="relative overflow-hidden bg-primary/10 border-b border-border"
+          className="relative overflow-hidden bg-card border-b border-border"
         >
           <div className="container mx-auto px-4 py-12 sm:py-20 text-center relative z-10">
             <div className="flex justify-center mb-6">
