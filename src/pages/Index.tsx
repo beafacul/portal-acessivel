@@ -35,11 +35,11 @@ const Index = () => {
               Um portal dedicado à divulgação e análise de tecnologias que promovem
               acessibilidade, autonomia e inclusão social.
             </p>
-            <div className="flex items-center justify-center gap-2 mt-8 text-muted-foreground" aria-hidden="true">
-              <CaneIcon size={18} />
-              <Users size={18} />
-              <Brain size={18} />
-              <Smartphone size={18} />
+          <div className="flex items-center justify-center gap-4 mt-8 text-muted-foreground" aria-hidden="true">
+              <div className="flex items-center gap-1"><CaneIcon size={18} /><span className="text-xs">Bengala</span></div>
+              <div className="flex items-center gap-1"><Users size={18} /><span className="text-xs">Inclusão</span></div>
+              <div className="flex items-center gap-1"><Brain size={18} /><span className="text-xs">IA</span></div>
+              <div className="flex items-center gap-1"><Smartphone size={18} /><span className="text-xs">Apps</span></div>
             </div>
           </div>
           {/* Decorative shapes */}
