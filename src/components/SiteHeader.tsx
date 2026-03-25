@@ -25,8 +25,8 @@ const SiteHeader = () => {
           <Button
             variant="default"
             size="sm"
-            aria-label="Fazer login"
-            className="font-bold"
+            aria-label="Fazer login na sua conta"
+            className="font-bold min-h-[44px] min-w-[44px] px-4"
           >
             <LogIn size={18} aria-hidden="true" />
             <span className="ml-1">Login</span>
