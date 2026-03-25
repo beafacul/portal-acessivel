@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Sun, Moon, Eye, ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
+import { Sun, Moon, Eye, ZoomIn, ZoomOut } from "lucide-react";
 
 type FontSize = "normal" | "large" | "xlarge";
 type Theme = "light" | "dark" | "high-contrast";
