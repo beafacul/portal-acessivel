@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Sun, Moon, Eye, ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
+import { Sun, Moon, Eye, ZoomIn, ZoomOut } from "lucide-react";
 
 type FontSize = "normal" | "large" | "xlarge";
 type Theme = "light" | "dark" | "high-contrast";
@@ -56,10 +56,10 @@ const AccessibilityControls = () => {
         onClick={decreaseFontSize}
         aria-label="Diminuir tamanho da fonte"
         disabled={fontSize === "normal"}
-        className="text-foreground border-foreground/30 hover:bg-accent"
+        className="text-foreground border-foreground/30 hover:bg-accent min-h-[44px] min-w-[44px]"
       >
-        <ZoomOut size={18} />
-        <span className="sr-only sm:not-sr-only sm:ml-1 text-xs">A-</span>
+        <ZoomOut size={18} aria-hidden="true" />
+        <span className="ml-1 text-xs font-semibold">A-</span>
       </Button>
       <Button
         variant="outline"
@@ -67,33 +67,20 @@ const AccessibilityControls = () => {
         onClick={increaseFontSize}
         aria-label="Aumentar tamanho da fonte"
         disabled={fontSize === "xlarge"}
-        className="text-foreground border-foreground/30 hover:bg-accent"
+        className="text-foreground border-foreground/30 hover:bg-accent min-h-[44px] min-w-[44px]"
       >
-        <ZoomIn size={18} />
-        <span className="sr-only sm:not-sr-only sm:ml-1 text-xs">A+</span>
+        <ZoomIn size={18} aria-hidden="true" />
+        <span className="ml-1 text-xs font-semibold">A+</span>
       </Button>
       <Button
         variant="outline"
         size="sm"
         onClick={cycleTheme}
         aria-label={`Alternar tema. Tema atual: ${themeLabel}`}
-        className="text-foreground border-foreground/30 hover:bg-accent"
+        className="text-foreground border-foreground/30 hover:bg-accent min-h-[44px]"
       >
         {themeIcon}
-        <span className="sr-only sm:not-sr-only sm:ml-1 text-xs">{themeLabel}</span>
-      </Button>
-      <Button
-        variant="outline"
-        size="sm"
-        onClick={() => {
-          setFontSize("normal");
-          setTheme("light");
-        }}
-        aria-label="Restaurar configurações padrão"
-        className="text-foreground border-foreground/30 hover:bg-accent"
-      >
-        <RotateCcw size={18} />
-        <span className="sr-only sm:not-sr-only sm:ml-1 text-xs">Resetar</span>
+        <span className="ml-1 text-xs font-semibold">{themeLabel}</span>
       </Button>
     </nav>
   );
