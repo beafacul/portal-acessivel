@@ -130,11 +130,12 @@
     font-family: var(--font-body);
   }
 
-  /* Enhanced focus styles for accessibility */
+  /* Enhanced focus styles for accessibility — WCAG AAA visible focus */
   *:focus-visible {
-    outline: var(--focus-ring-width) solid hsl(var(--focus-ring));
-    outline-offset: 2px;
-    border-radius: 2px;
+    outline: 3px solid hsl(var(--focus-ring));
+    outline-offset: 3px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 6px hsl(var(--background)), 0 0 0 9px hsl(var(--focus-ring));
   }
 
   /* Skip to content link */
